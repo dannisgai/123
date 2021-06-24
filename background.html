@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <title>商务控制后台</title>
+</head>
+
+<body>
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><i class="fab fa-old-republic mr-2"></i>金牌牛牛店控制后台</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav d-flex ">
+                <a class="nav-item nav-link active" href="index.html">首页 <span class="sr-only">(current)</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid md-4 main">
+        <div class="row">
+            <div class="col-lg-3 col-6">
+                <div class="card rounded-0 h-100">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="far fa-money-bill-alt fa-4x text-success mr-2 d-none d-sm-blk"></div>
+                        <div class="text-center w-100">
+                            <div class="h5">今日营收</div>
+                            <div class="h3">9,000元</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="card rounded-0 h-100">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="fas fa-user-friends fa-4x text-primary mr-2"></div>
+                        <div class="text-center w-100">
+                            <h5>今日用餐人数</h5>
+                            <h3 class="display-4">142人</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="card rounded-0 h-100">
+                    <div class="card-body d-flex">
+                        <div class="fas fa-id-card fa-4x text-primary mr-2"></div>
+                        <div class="text-center w-100">
+                            <h5>完成订单数</h5>
+                            <h3 class="display-4">100单</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="card rounded-0 h-100">
+                    <div class="card-body d-flex">
+                        <div class="fas fa-box fa-4x text-primary mr-2"></div>
+
+                        <div class="text-center w-100">
+                            <h5>客户满意度</h5>
+                            <h3 class="display-4">98%</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <section class="container-fluid mt-4">
+        <div class="row mb-5">
+            <div class="col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="text-center w-100">
+                            <div class="h5">目前订单数</div>
+                            <div class="h3" style="font-size:60px;">20单</div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progress" style="width:30%" aria-valuenow="30" aria-valuemin="70" aria-valuemax="100">外卖</div>
+                                <div class="progress-bar bg-success" role="progressbar" style="width:70%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">堂食</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="card h-100">
+                    <div class="card header bg-dark text-light" style="font-weight:bold;">
+                        新进订单
+                    </div>
+                    <div class="card body">
+                        <div class="text-right">
+                            <a href="" class="btn btn-outline-success">订单管理</a>
+                        </div>
+                        <table class="table table-dark">
+                            <thead>
+                                <tr>
+                                    <th scope="col">来源</th>
+                                    <th scope="col">姓名</th>
+                                    <th scope="col">货品</th>
+                                    <th scope="col" class="text-right pr-5">价格</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>外卖</td>
+                                    <td>杨（先生）</td>
+                                    <td>金牌牛杂、金牌牛腩</td>
+                                    <td class="text-right">60</td>
+                                </tr>
+                                <tr>
+                                    <td>外卖</td>
+                                    <td>文（先生）</td>
+                                    <td>金牌牛杂 x 2</td>
+                                    <td class="text-right">60</td>
+                                </tr>
+                                <tr>
+                                    <td>堂食</td>
+                                    <td>桌号5</td>
+                                    <td>牛牛巨饭 x 3 、牛牛巨面 、金牌牛腩...</td>
+                                    <td class="text-right">180</td>
+                                </tr>
+                                <tr>
+                                    <td>堂食</td>
+                                    <td>桌号3</td>
+                                    <td>牛牛巨饭 、金牌牛杂 、金牌牛腩</td>
+                                    <td class="text-right">90</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="text-right">总营收</td>
+                                    <td class="text-right">8500元</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="card rounded-0">
+        <div class="card-header">
+
+        </div>
+        <div class="card-body">
+            <div class="d-flex">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <label for="month" class="sr-only">月份</label>
+
+                        <select name="" id="month" class="form-control form-control-sm">
+                            <option value="6">6月</option>
+                            <option value="5">5月</option>
+                            <option value="4">4月</option>
+                            <option value="3">3月</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="ml-auto">
+                    <a href="" class="btn btn-outline-secondary btn-sm">下载报表</a>
+                    <a href="" class="btn btn-outline-secondary btn-sm">订单管理</a>
+                </div>
+
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th width="50">日期</th>
+                        <th>订单数</th>
+                        <th>堂食订单数</th>
+                        <th>外卖订单数</th>
+                        <th width="15%">顾客满意度</th>
+                        <th width="150">营业额</th>
+                        <th width="150">净利润</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">6/1</th>
+                        <td>180</td>
+                        <td>130</td>
+                        <td>50</td>
+                        <td>99%</td>
+                        <td class="text-right">10,000</td>
+                        <td class="text-right">6,000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6/2</th>
+                        <td>150</td>
+                        <td>110</td>
+                        <td>40</td>
+                        <td>99%</td>
+                        <td class="text-right">9,000</td>
+                        <td class="text-right">5,400</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6/3</th>
+                        <td>160</td>
+                        <td>110</td>
+                        <td>50</td>
+                        <td>99%</td>
+                        <td class="text-right">9,500</td>
+                        <td class="text-right">5,700</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6/4</th>
+                        <td>190</td>
+                        <td>140</td>
+                        <td>50</td>
+                        <td>99%</td>
+                        <td class="text-right">11,000</td>
+                        <td class="text-right">7,000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6/5</th>
+                        <td>150</td>
+                        <td>110</td>
+                        <td>40</td>
+                        <td>99%</td>
+                        <td class="text-right">9,000</td>
+                        <td class="text-right">5,400</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6/6</th>
+                        <td>170</td>
+                        <td>120</td>
+                        <td>50</td>
+                        <td>99%</td>
+                        <td class="text-right">10,000</td>
+                        <td class="text-right">6,000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6" class="text-right">月总营收</td>
+                        <td class="text-right">2,750,500</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="text-right">月总盈利</td>
+                        <td class="text-right">1,540,500</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <footer class="bg-light text-muted py-3">
+        <div class="container">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item">© Copyright 2021 金牌牛牛店</li>
+                <p></p>
+                <li class="list-inline-item">Made by 文天锐、杨锦波</li>
+            </ul>
+
+        </div>
+    </footer>
+
+</body>
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/ulg/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // 編輯的 Modal 事件
+        $('#editModal').on('show.bs.modal', function(event) {
+            var button = $(event.relatedTarget) // 選則當初觸發事件的按鈕
+            var title = button.data('title') // 使用 data-* 來取得特定內容
+
+            var modal = $(this)
+            modal.find('.modal-title').text(title) // 寫入資料
+        });
+
+        $('#removeModal').on('show.bs.modal', function(event) {
+            var button = $(event.relatedTarget) // 選則當初觸發事件的按鈕
+            var title = button.data('title') // 使用 data-* 來取得特定內容
+
+            var modal = $(this)
+            modal.find('.modal-title').text('確認' + title) // 寫入資料
+        })
+    });
+</script>
+<script>
+    window.chartColors = {
+        red: 'rgb(255, 99, 132)',
+        orange: 'rgb(255, 159, 64)',
+        yellow: 'rgb(255, 205, 86)',
+        green: 'rgb(75, 192, 192)',
+        blue: 'rgb(54, 162, 235)',
+        purple: 'rgb(153, 102, 255)',
+        grey: 'rgb(201, 203, 207)'
+    };
+
+    var randomScalingFactor = function() {
+        return Math.round(Math.random() * 100);
+    };
+
+    var config = {
+        type: 'pie',
+        data: {
+            datasets: [{
+                data: [
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                ],
+                backgroundColor: [
+                    window.chartColors.red,
+                    window.chartColors.orange,
+                    window.chartColors.yellow,
+                    window.chartColors.green,
+                    window.chartColors.blue,
+                ],
+                label: 'Dataset 1'
+            }],
+            labels: [
+                "Red",
+                "Orange",
+                "Yellow",
+                "Green",
+                "Blue"
+            ]
+        },
+        options: {
+            responsive: true
+        }
+    };
+
+    // bar
+    var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var colors = Chart.helpers.color;
+    var barChartData = {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [{
+            label: 'Dataset 1',
+            backgroundColor: colors(window.chartColors.red).alpha(0.5).rgbString(),
+            borderColor: window.chartColors.red,
+            borderWidth: 1,
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ]
+        }, {
+            label: 'Dataset 2',
+            backgroundColor: colors(window.chartColors.blue).alpha(0.5).rgbString(),
+            borderColor: window.chartColors.blue,
+            borderWidth: 1,
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ]
+        }]
+
+    };
+
+    window.onload = function() {
+        // pie
+        document.querySelectorAll('.chart-item').forEach(function(item) {
+            config.data.datasets.forEach(function(dataset) {
+                dataset.data = dataset.data.map(function() {
+                    return randomScalingFactor();
+                });
+            });
+            var ctx = item.getContext("2d");
+            window.myPie = new Chart(ctx, config);
+        })
+
+        // bar
+        var barCtx = document.getElementById("barCanvas").getContext("2d");
+        window.myBar = new Chart(barCtx, {
+            type: 'bar',
+            data: barChartData,
+            options: {
+                responsive: true,
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'Chart.js Bar Chart'
+                }
+            }
+        });
+
+    };
+</script>
+
+</html>

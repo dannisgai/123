@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>金牌牛牛店</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\all.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#"><i class="fab fa-old-republic mr-2"></i> 金牌牛牛店</a>
+
+        <div class="navbar-nav d-flex ">
+            <a class="nav-item nav-link active" href="background.html">控制后台 <span class="sr-only">(current)</span></a>
+        </div>
+        <!-- 购物车内的数量（Button 内包含icon，数量badge） -->
+        <div class="dropdown ml-auto">
+            购物车按钮
+            <button class="btn btn-sm btn-cart" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-shopping-cart text-dark fa-2x" aria-hidden="true"></i>
+                <span class="badge bage-pill badge-danger">2</span>
+            </button>
+
+            <div class="dropdown-menu dropdown-menu-right p-2" style="min-width: 300px;"
+                aria-labelledby="dropdownMenuButton">
+                <table class="table table-sm">
+                    <h6 class="mb-3 pt-2">已选择商品</h6>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle text-center">
+                                <a href="#removeModal_1" class="text-muted" data-toggle="modal"
+                                    data-target="#removeModal_1" data-title="删除 金牌牛杂 1 件" data-backdrop="static">
+                                    <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                            <td class="align-middle">金牌牛杂</td>
+                            <td class="align-middle">1 件</td>
+                            <td class="align-middle text-right">30元</td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle text-center">
+                                <a href="#removeModal_2" class="text-muted" data-toggle="modal"
+                                    data-target="#removeModal_2" data-title="删除 金牌牛腩 1 件" data-backdrop="static">
+                                    <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                            <td class="align-middle">金牌牛腩</td>
+                            <td class="align-middle">1 件</td>
+                            <td class="align-middle text-right">30元</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- btn-block把按钮撑到100% -->
+                <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#editModal" data-title=""
+                    data-backdrop="static">结账去</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid jumbotron-bg d-flex align-items-end">
+        <div class="container">
+            <div class="bg-lighter text-center">
+                <h1 class="display-4 font-weight-bold">新店开张！全场30元！</h1>
+                <p class="lead"> 如果你是一个正宗吃货，估计有一道小吃你是不会错过的，那就是牛杂。
+                    牛杂，又称“牛杂碎”，是牛内脏的统称，是发源于老西关地区的一道传统美食。牛杂说就是牛身上的下脚料，
+                    同羊杂一样，在外国人的眼里，吃这些东西简直是不可想象的事情，但是这只能说他们在饮食上达不到我们这个高度，
+                    其实牛身上的东西都是宝，关键是会做，做好了，那就是一等一的美味。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group sticky-top">
+                    <a href="#pane-1" class="list-group-item list-group-item-action active" data-toggle="list">
+                        <i class="fa fa-heart mr-2"></i>招牌牛牛
+                    </a>
+                    <a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list">
+                        <i class="fas fa-hamburger mr-2"></i>牛牛堡
+                    </a>
+                    <a href="#pane-3" class="list-group-item list-group-item-action" data-toggle="list">
+                        <i class="fas fa-rainbow mr-2"></i>牛牛饭
+                    </a>
+                    <a href="#pane-4" class="list-group-item list-group-item-action" data-toggle="list">
+                        <i class="fas fa-glass-whiskey mr-2"></i>牛牛奶
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="tab-content">
+
+                    <div class="tab-pane active" id="pane-1">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control col-md-4 col-9 rounded-0" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-warning my-2 my-sm-0 rounded-0" type="submit">Search</button>
+                        </form>
+                        <div class="row mt-2 mt-md-4 mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+
+                                    <img class="card-img-top" src="picture\niuza.jpg" height="200" alt="Card image cap">
+                                    <div class="card-body">
+                                        <a class="nav-item nav-link active" href="niuza.html">
+                                            <h5 class="card-title">金牌牛杂</h5>
+                                        </a>
+                                        <p class="card-text">精熬骨汤配上秘制料包，韧劲的牛杂，入口清爽，由于是清炖，使得入口的牛杂香而不腻，唇齿留香。
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">原味</a>
+                                            <a href="#" class="btn btn-outline-secondary">微辣</a>
+                                            <a href="#" class="btn btn-outline-secondary">重辣</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+
+                                    <img class="card-img-top" src="picture\niunan.jpg" height="200"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <a class="nav-item nav-link active" href="niunan.html">
+                                            <h5 class="card-title">金牌牛腩</h5>
+                                        </a>
+                                        <p class="card-text">选自新鲜牛腩，保证最佳口感，牛腩软嫩，牛油香味扑鼻，整个牛腩的味道让人感到满意！
+                                        </p>
+                                    </div>
+                                    <div class="card-footer bg-white">
+
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">原味</a>
+                                            <a href="#" class="btn btn-outline-secondary">微辣</a>
+                                            <a href="#" class="btn btn-outline-secondary">重辣</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane active" id="pane-2">
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+
+                                    <img class="card-img-top" src="picture\shouqing.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">牛牛巨堡</h5>
+                                        <p class="card-text">不好意思卖完了呢
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="#" class="btn btn-outline-secondary btn-block disabled">缺货中</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane active" id="pane-3">
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+
+                                    <img class="card-img-top" src="picture\shouqing.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">牛牛巨饭</h5>
+                                        <p class="card-text">不好意思卖完了呢
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="#" class="btn btn-outline-secondary btn-block disabled">缺货中</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane active" id="pane-4">
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+
+                                    <img class="card-img-top" src="picture\shouqing.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">牛牛巨奶</h5>
+                                        <p class="card-text">不好意思卖完了呢
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="#" class="btn btn-outline-secondary btn-block disabled">缺货中</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <nav aria-label="Page navigation example" style="margin: 0 auto;">
+                <ul class="pagination d-flex justify-content-center mb-5">
+                    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+
+
+    <div class="container main-contant py-5">
+        <h1 class="text-center mb-3 text-secondary">金牌牛牛店 确定订单</h1>
+        <div class="from-row text-center">
+            <div class="col-12 col-sm">
+                
+                <div class="alert alert-success alert-rounded" role="alert">
+                    输入信息
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row justify-content-center mr-5">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header d-flex" id="headingOne">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            显示购物车细节
+                        </button>
+                        <div class="ml-auto">
+                            <span class="h3">66元</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#headingOne">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th width="30"></th>
+                                <th width="100"></th>
+                                <th>商品名称</th>
+                                <th width="100">数量</th>
+                                <th width="80">小计</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-target="#removeModal" data-title="删除 金牌牛杂 1 件">
+                                        <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td class="py-1" width="130">
+                                    <img src="picture\niuza.jpg" class="img-thumbnail" alt="">
+                                </td>
+                                <td class="align-middle">金牌牛杂</td>
+                                <td class="align-middle">1件</td>
+                                <td class="align-middle text-right">30元</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-target="#removeModal" data-title="删除 金牌牛腩 1 件">
+                                        <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td class="py-1" width="130">
+                                    <img src="picture\niunan.jpg" class="img-thumbnail" alt="">
+                                </td>
+                                <td class="align-middle">金牌牛杂</td>
+                                <td class="align-middle">1件</td>
+                                <td class="align-middle text-right">30元</td>
+                            </tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="align-middle text-right">配送费</td>
+                            <th class="align-middle text-right">3元</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="align-middle text-right">包装费</td>
+                                <th class="align-middle text-right">3元</th>
+                            <tr>
+                                <td colspan="4" class="text-right">合计</td>
+                                <td class="text-right">
+                                    <strong>66元</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card border-0 rounded-0 mt-5">
+                    <div class="card-header border-bottom-0">
+                        <h3 class="text-center">订购人资讯</h3>
+                    </div>
+                </div>
+                <form class="mt-3 needs-validation" novalidate>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name">姓名</label>
+                            <input type="text" class="form-control" id="name" placeholder="姓名" required>
+                            <div class="invalid-feedback">
+                                请输入姓名
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="Email">电话</label>
+                            <input type="Email" class="form-control" id="phone number" placeholder="号码" required>
+                            <div class="invalid-feedback">
+                                请输入电话号
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="country">国家</label>
+                            <select id="country" class="form-control">
+                                <option selected>中国</option>
+                                <option>美国</option>
+                                <option>马来西亚</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="province">省份</label>
+                            <select id="province" class="form-control">
+                                <option selected>广东省</option>
+                                <option>广西省</option>
+                                <option>福建省</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="city">城市</label>
+                            <select id="city" class="form-control">
+                                <option selected>东莞市</option>
+                                <option>广州市</option>
+                                <option>深圳市</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="address">地址</label>
+                            <input type="text" class="form-control" id="address" placeholder="学院路251号" required>
+                            <div class="invalid-feedback">
+                                请输入地址
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <a href="#" class="btn btn-secondary mr-1">继续选购</a>
+                        <a link rel="stylesheet" href="finish.html" class="btn btn-secondary mr-1">确认付款</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-muted py-3">
+        <div class="container">
+            <ul class="list-inline text-center">
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item">© Copyright 2021 金牌牛牛店</li>
+                    <p></p>
+                    <li class="list-inline-item">Made by 文天锐、杨锦波</li>
+                </ul>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!--bg-danger text-white将删除按钮改颜色-->
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="editModalLabel">购买登入</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control mb-3" placeholder="请输入Email">
+                            <label for="password">密码</label>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">记住账号</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">登入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="removeModal_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!--bg-danger text-white将删除按钮改颜色-->
+                <div class="modal-header bg-danger">
+                    <h5 class="modal-title text-white" id="removeModalLabel_1">确认</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th width="30"></th>
+                                <th width="100"></th>
+                                <th>商品名称</th>
+                                <th width="100">数量</th>
+                                <th width="80">小计</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle text-center"></td>
+                                <td class="py-1" width="130">
+                                    <img src="picture\niuza.jpg" class="img-thumbnail" alt="">
+                                </td>
+                                <td class="align-middle">金牌牛杂</td>
+                                <td class="align-middle">1件</td>
+                                <td class="align-middle text-right">30元</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="text-right">包装费</td>
+                                <td class="text-right">
+                                    <strong>1.5元</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="text-right">合计</td>
+                                <td class="text-right">
+                                    <strong>31.5元</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="removeModal_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!--bg-danger text-white将删除按钮改颜色-->
+                <div class="modal-header bg-danger">
+                    <h5 class="modal-title text-white" id="removeModalLabel_2">确认</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th width="30"></th>
+                                <th width="100"></th>
+                                <th>商品名称</th>
+                                <th width="100">数量</th>
+                                <th width="80">小计</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle text-center"></td>
+                                <td class="py-1" width="130">
+                                    <img src="picture\niunan.jpg" class="img-thumbnail" alt="">
+                                </td>
+                                <td class="align-middle">金牌牛腩</td>
+                                <td class="align-middle">1件</td>
+                                <td class="align-middle text-right">30元</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="text-right">包装费</td>
+                                <td class="text-right">
+                                    <strong>1.5元</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="text-right">合计</td>
+                                <td class="text-right">
+                                    <strong>31.5元</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="js/all.js"></script>
+</body>
+
+</html>
